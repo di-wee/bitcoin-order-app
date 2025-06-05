@@ -33,7 +33,7 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - name: Install puppeteer
-	run: |
+        run: |
 	  npm install puppeteer --save-dev
       - name: Install Dependencies
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
